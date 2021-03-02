@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td{
+            border: 1px solid rgb(143, 196, 214);
+        }
+        td{
+            padding: 10px;
+        }
+        table{
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border-collapse: collapse;
+        }
+        tr{
+            width: 30px;
+        }
+        .tdSub{
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <table>
+            <thead class="tdSub">
+                <td colspan="3"><strong>Invoice #12345ABC</strong></td>
+                <td><strong>18 Jul 2019</strong></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2"><strong>Pay To:</strong> <br>The Tech Park <br>123 Willow Street<br>Boulevard, LA-567892</td>
+                    <td colspan="2"><strong>Customer:</strong><br>John Lark<br>276 Main Street<br>Boulevard, LA-567892</td>
+                    <!-- Or you can use span
+                    <span>Pay To:</span><br>
+                    The Tech Park <br>123 Willow Street<br>Boulevard, LA-567892 
+                Also, instead of assigning "tdSub" to every thead, you could easily ensure the headings are enclosed in tag <th> and assign a general color to every th
+                -->
+                </tr>
+            </tbody>
+
+            <thead class="tdSub">
+                <td><strong>Name/Description</td></strong>
+                <td><strong>Qty.</strong></td>
+                <td><strong>MRP</strong></td>
+                <td><strong> Amount</strong></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Biryani</td>
+                    <td>3</td>
+                    <td>400</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Shake</td>
+                    <td>3</td>
+                    <td>200</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td class="tdSub" colspan="3">Subtotal</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td class="tdSub" colspan="2">Tax</td>
+                    <td>10%</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td class="tdSub" colspan="3">Grandtotal</td>
+                    <td>RS 1620</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="">
+            Username:<br>
+        <input type="text" name="" value="username">
+        <br>Password:<br>
+        <input type="password" ><br>
+        <input type="submit" value="Login">
+        </form>
+
+        <form action="">
+            <div>
+                <p>Username:</p>
+                <input type="text" name="" value="username">
+            </div>
+        </form>
+        
+
+        
+    </section>
+</body>
+</html>
